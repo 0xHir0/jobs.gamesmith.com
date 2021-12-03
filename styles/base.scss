@@ -1,0 +1,60 @@
+// COLORS
+$color-scheme-1: #f1dd0a;
+
+// SHADES
+$color-light-gray: #ababab;
+$color-light-gray-alt-2: #c8c8c8;
+
+// BACKGROUNDS
+$color-background-main: #151515;
+$color-background-1: #262626;
+$color-background-1-alt-1: #323232;
+$color-background-2: #515151;
+$color-background-3: #1d1d1d;
+
+// Breakpoints
+$wide-expand: 1700px;
+$wide: 1500px;
+$extra-large: 1200px;
+$large-medium: 1050px;
+$large: 992px;
+$medium: 768px;
+$small: 600px;
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  padding: env(safe-area-inset);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Palanquin', sans-serif;
+  // font-family: Mark Pro, Helvetica Neue, Helvetica, Arial, sans-serif !important;
+  line-height: 1.6;
+  font-style: normal;
+  background-color: $color-background-main;
+  letter-spacing: 0.1rem;
+
+  &::-webkit-scrollbar {
+    width: 0.3rem;
+    background-color: #757575;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $color-background-2;
+  }
+}

@@ -1,0 +1,16 @@
+// BASE
+@import './base.scss';
+
+// COMPONENTS
+@import './components/nav.scss';
+@import './components/loginModal.scss';
+@import './components/footer-menu.scss';
+
+// PAGES
+@import './pages/home.scss';
+@import './pages/job.scss';
+
+// HELPERS
+@import './helpers/animations.scss';
+@import './helpers/forms.scss';
+@import './helpers/errorHandling.scss';

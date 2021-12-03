@@ -1,0 +1,45 @@
+.footerMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: $color-background-2;
+  padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+
+  @media only screen and (min-width: $medium) {
+    display: none;
+  }
+
+  &-active {
+    svg {
+      fill: $color-scheme-1 !important;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    svg {
+      width: 30%;
+      height: 3rem;
+      fill: white;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  span {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+}

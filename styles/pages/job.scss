@@ -1,0 +1,215 @@
+.job {
+  background-color: $color-background-main;
+  min-height: auto;
+  padding: 8rem 0;
+  margin: 0 0 2rem 0;
+  position: relative;
+  display: none;
+
+  @media only screen and (max-width: $large) {
+    display: block;
+  }
+
+  @media only screen and (max-width: $large) {
+    padding: 8rem 1.5rem;
+  }
+
+  &-heading-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-title {
+    font-size: 4.2rem;
+    color: white;
+    position: relative;
+    text-align: center;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $large) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &-back {
+    display: flex;
+    align-items: center;
+    color: $color-scheme-1;
+    text-transform: capitalize;
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    @media only screen and (max-width: $large) {
+      display: none;
+    }
+
+    svg {
+      width: 4rem;
+      height: 4rem;
+      fill: $color-scheme-1;
+      margin-right: 1.5rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    span {
+      font-size: 2.2rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-mobile {
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      padding: 3rem 2rem 2rem 2rem;
+      border-bottom: 0.08rem solid $color-light-gray;
+      color: $color-scheme-1;
+      text-transform: capitalize;
+      display: none;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+        fill: $color-scheme-1;
+        margin-right: 1.5rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      span {
+        font-size: 2.2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      @media only screen and (max-width: $large) {
+        display: block;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+
+  &-content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-background-3;
+    margin: 3rem 0 0 0;
+    border-radius: 1.2rem;
+
+    @media only screen and (max-width: $large) {
+      width: 100%;
+      padding: 0;
+    }
+
+    &-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-image {
+      display: block;
+      width: auto;
+      max-height: 25rem;
+      min-height: auto;
+      padding: 3rem 0;
+    }
+
+    &-header {
+      background-color: $color-background-2;
+      width: 100%;
+      text-align: center;
+      color: white;
+      padding: 5rem 0;
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      &-location {
+        display: block;
+        font-size: 2.2rem;
+        padding: 1rem 0;
+      }
+
+      img {
+        width: auto;
+        min-height: auto;
+      }
+
+      &-all {
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: white;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          color: $color-scheme-1;
+        }
+      }
+    }
+
+    &-description {
+      background-color: $color-background-2;
+      padding: 2rem 4rem;
+      font-size: 1.6rem !important;
+      color: white;
+
+      * {
+        background-color: transparent !important;
+        color: white !important;
+        font-size: inherit !important;
+        font-weight: 200 !important;
+      }
+
+      p > * {
+        color: white !important;
+      }
+    }
+
+    &-button {
+      background-color: $color-background-2;
+      border-bottom-left-radius: 1.2rem;
+      border-bottom-right-radius: 1.2rem;
+      text-align: center;
+      padding: 2rem 0 5rem 0;
+      width: 100%;
+
+      button {
+        font-size: 1.8rem;
+        padding: 1.5rem 2rem;
+        width: 50%;
+        margin: 1.5rem 0;
+        outline: none;
+        border: none;
+        background-color: $color-scheme-1;
+        border-radius: 0.6rem;
+        text-transform: uppercase;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

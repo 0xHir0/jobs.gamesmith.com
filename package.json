@@ -1,0 +1,26 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "watch:css": "node-sass styles/main.scss styles/app.css -w"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "axios": "^0.21.1",
+    "js-cookie": "^2.2.1",
+    "next": "^11.1.2",
+    "next-absolute-url": "^1.2.2",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "slugify": "^1.5.3",
+    "string-strip-html": "^8.3.0",
+    "webpack": "^5.53.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}

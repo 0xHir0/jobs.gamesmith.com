@@ -1,0 +1,68 @@
+.form {
+  &-group {
+    &-single {
+      width: 100%;
+
+      input {
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 4rem 3rem;
+        border: none;
+        border-bottom: 0.2rem solid $color-light-gray-alt-2;
+        outline: none;
+        -webkit-text-fill-color: white;
+        -webkit-box-shadow: 0 0 0px 1000px $color-background-1 inset;
+        background-color: $color-background-1 !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+      input:focus,
+      input:active {
+        outline: none;
+        -webkit-text-fill-color: white;
+        -webkit-box-shadow: 0 0 0px 1000px $color-background-1 inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      select:-webkit-autofill,
+      select:-webkit-autofill:hover,
+      select:-webkit-autofill:focus {
+        outline: none;
+        -webkit-text-fill-color: white;
+        -webkit-box-shadow: 0 0 0px 1000px $color-background-1 inset;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+    }
+
+    &-messageHandling {
+      text-align: center;
+      font-size: 1.4rem;
+      height: 4rem;
+      color: red;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  button {
+    font-size: 2.2rem;
+    padding: 2rem 4rem;
+    margin: 1rem 0 0 0;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: $color-scheme-1;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

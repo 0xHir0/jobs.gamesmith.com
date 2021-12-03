@@ -1,0 +1,12 @@
+.search {
+  &-error {
+    font-size: 1.8rem;
+    color: $color-scheme-1 !important;
+    height: 30rem;
+
+    &-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

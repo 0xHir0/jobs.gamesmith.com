@@ -1,0 +1,52 @@
+.login-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  &-box {
+    background-color: $color-background-1;
+    width: 40rem;
+    border-bottom-left-radius: 1.2rem;
+
+    @media only screen and (max-width: $medium) {
+      width: 90%;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 3rem;
+      border-bottom: 0.2rem solid $color-light-gray-alt-2;
+
+      span {
+        font-size: 2.5rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          fill: $color-scheme-1;
+        }
+      }
+    }
+  }
+
+  &-form {
+    div {
+      padding: 1rem 3rem;
+    }
+  }
+}
